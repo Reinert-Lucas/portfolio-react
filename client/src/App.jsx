@@ -1,13 +1,13 @@
 import { Routes, Route } from 'react-router-dom';
-import './App.css'
+import MainView from './components/MainView';
+import './css/App.css'
 
 function App() {
 
   return (
     <>
       <Routes>
-        {/* <Route path="/" element={<Login />} />
-        <Route path="/weather" element={<Weather />} /> */}
+        <Route path="/" element={<MainView/>} />
       </Routes>
     </>
   )

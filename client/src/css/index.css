@@ -1,0 +1,24 @@
+:root {
+    --violeta-ppal: rgb(65, 45, 85);
+    /* Resaltar */
+    --acent-cian: rgb(0, 255, 255); 
+    --acent-magen: rgb(255, 0, 255); 
+    --acent-neon: rgb(255, 105, 180);
+    /* Texts, borders, bg-secs */
+    --neutral-white: rgb(245, 245, 245);
+    --neutral-grey: rgb(90, 70, 110);
+    --neutral-dark-grey: rgb(30, 30, 30);
+    /* Hover, alerts, etc */
+    --alt-blue: rgb(0, 150, 255); 
+    --alt-yellow: rgb(255, 230, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--violeta-ppal);
+}
