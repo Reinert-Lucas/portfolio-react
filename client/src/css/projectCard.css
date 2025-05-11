@@ -1,4 +1,4 @@
-.project-card {
+.projectCard {
   background-color: var(--bg-alt);
   border: 2px solid var(--accent-blue);
   border-radius: 12px;
@@ -11,12 +11,12 @@
   transition: transform 0.3s ease;
 }
 
-.project-card:hover {
+.projectCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px var(--accent-blue);
 }
 
-.project-title {
+.projectTitle {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
@@ -24,7 +24,7 @@
   margin-bottom: 1rem;
 }
 
-.project-img {
+.projectImg {
   display: block;
   width: 100%;
   max-width: 400px;
@@ -33,18 +33,18 @@
   border: 2px solid var(--accent-blue);
 }
 
-.project-desc {
+.projectDesc {
   font-size: 15px;
   text-align: justify;
   margin-bottom: 1rem;
 }
 
-.project-links {
+.projectLinks {
   text-align: center;
   margin-top: 1rem;
 }
 
-.project-links a {
+.projectLinks a {
   color: var(--accent-blue);
   margin: 0 10px;
   text-decoration: none;
@@ -52,6 +52,6 @@
   transition: color 0.3s;
 }
 
-.project-links a:hover {
+.projectLinks a:hover {
   color: var(--accent-green);
 }

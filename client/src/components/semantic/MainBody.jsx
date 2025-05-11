@@ -1,12 +1,12 @@
 import AboutMe from "../body/AboutMe"
-import ProjectCard from "../body/ProjectCard"
+import Projects from "../body/Projects"
 
 function MainBody() {
     return (
         <>
             <main className="bodyPpal">
                 <AboutMe />
-                <ProjectCard />
+                <Projects />
             </main>
         </>
     )
