@@ -4,7 +4,7 @@ const app = express();
 const cors = require("cors");
 // App Config
 const corsOptions = {
-  origin: ["http://localhost:5173"],
+  origin: ["https://reinert-lucas.netlify.app"],
 }
 require('dotenv').config();
 app.use(cors(corsOptions));

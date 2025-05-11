@@ -28,6 +28,7 @@
   display: block;
   width: 100%;
   max-width: 400px;
+  height: 200px;
   margin: 0 auto 1rem;
   border-radius: 10px;
   border: 2px solid var(--accent-blue);
@@ -54,4 +55,10 @@
 
 .projectLinks a:hover {
   color: var(--accent-green);
+}
+
+@media (min-width: 768px) {
+  .projectDesc {
+    font-size: 20px;
+  }
 }

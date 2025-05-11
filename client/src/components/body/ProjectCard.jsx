@@ -5,7 +5,7 @@ function ProjectCard({ id, title, desc, img, git, extra }) {
     <>
       <div className="projectCard" id={id}>
         <h3 className="projectTitle">{title}</h3>
-        <img src={img} alt={`Captura de ${title}`} className="projectImg" />
+        <img src={img} alt={`Captura de ${title}`} className="projectImg" loading="lazy" />
         <p className="projectDesc">{desc}</p>
         <div className="projectLinks">
           <a href={git} target="_blank" rel="noopener noreferrer">Repositorio de GitHub</a> <br />
