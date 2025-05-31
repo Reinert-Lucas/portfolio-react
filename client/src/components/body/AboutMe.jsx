@@ -8,11 +8,12 @@ function AboutMe() {
             <p className='desc'>
                 Actualmente tengo 19 años y estoy cursando una Tec. Sup. en Desarrollo de Apps y Páginas Web
             </p>
-            <h3 className='langsTitle'>Lenguajes que Manejo</h3>
+            <h3 className='langsTitle'>Tecnologías que Manejo Actualmente</h3>
             <section className='langsCont'>
                 <article className='langsArt'>
                     <h4>Front-End</h4>
                     <ul>
+                        <li>Bootstrap</li>
                         <li>ReactJs</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
@@ -22,6 +23,7 @@ function AboutMe() {
                     <h4>Back-End</h4>
                     <ul>
                         <li>JavaScript</li>
+                        <li>TypeScript</li>
                         <li>ExpressJs</li>
                         <li>NodeJs</li>
                     </ul>

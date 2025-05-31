@@ -10,9 +10,19 @@ require('dotenv').config();
 app.use(cors(corsOptions));
 app.use(express.json());
 
+let cachedData = null;
+let lastFetched = 0;
+const CACHE_DURATION = 7 * 24 * 60 * 60 * 1000; // 7 días
+
 app.get('/api/datos', async (req, res) => {
   const gistId = process.env.GIST_ID;
   const tokenGist = process.env.GIST_TOKEN;
+
+  const now = Date.now();
+
+  if (cachedData && (now - lastFetched < CACHE_DURATION)) {
+    return res.json(cachedData);
+  }
 
   try {
     const response = await axios.get(`https://api.github.com/gists/${gistId}`, {
@@ -28,6 +38,8 @@ app.get('/api/datos', async (req, res) => {
     }
 
     const data = JSON.parse(file.content);
+    cachedData = data;
+    lastFetched = now;
     res.json(data);
 
   } catch (error) {
